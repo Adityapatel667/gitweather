@@ -18,14 +18,14 @@ const getweather = (city) => {
     .then((response) => response.json())
     .then((response) => {
      
-      cloud_pact.innerHTML = response.cloud_pct + "°C";
+      cloud_pact.innerHTML = response.temp + "°C";
       //    feels_like.innerHTML =response.feels_like;
       humidity.innerHTML = response.humidity;
       max_temp.innerHTML = response.max_temp;
       min_temp.innerHTML = response.min_temp;
       sunrise.innerHTML = response.sunrise;
       sunset.innerHTML = response.sunset;
-      temp.innerHTML = response.temp + "°C";
+      temp.innerHTML = response.cloud_pct +  "°C";
       wind_degrees.innerHTML = response.wind_degrees;
       wind_speed.innerHTML = response.wind_speed + "Km/hr";
       console.log(response);
