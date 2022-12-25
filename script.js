@@ -25,7 +25,7 @@ const getweather = (city) => {
       min_temp.innerHTML = response.min_temp;
       sunrise.innerHTML = response.sunrise;
       sunset.innerHTML = response.sunset;
-      temp.innerHTML = response.cloud_pct +  "°C";
+      temp.innerHTML = response.cloud_pct ;
       wind_degrees.innerHTML = response.wind_degrees;
       wind_speed.innerHTML = response.wind_speed + "Km/hr";
       console.log(response);
